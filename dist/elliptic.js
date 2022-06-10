@@ -2470,6 +2470,8 @@ KeyPair.prototype.validate = function validate() {
 };
 
 KeyPair.prototype.getPublic = function getPublic(compact, enc) {
+
+  console.log('getPublic() from elliptic library....');
   // compact is optional argument
   if (typeof compact === 'string') {
     enc = compact;
